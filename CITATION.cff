@@ -20,7 +20,9 @@ abstract: >-
   with SHAP attributions tied to snow, glacier, temperature and precipitation
   drivers. Supported by grant BR24993128.
 type: software
-version: 0.1.0
+version: 1.0.0
+doi: 10.5281/zenodo.21063833
+date-released: 2026-06-30
 license: MIT
 repository-code: "https://github.com/F1-bot/Explainable_Deep-Ensemble_Bias_Correction_of_GloFAS-ERA5"
 url: "https://github.com/F1-bot/Explainable_Deep-Ensemble_Bias_Correction_of_GloFAS-ERA5"

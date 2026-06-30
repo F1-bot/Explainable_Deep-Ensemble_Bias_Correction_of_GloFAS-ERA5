@@ -3,6 +3,10 @@
 **Explainable Deep-Ensemble Learning for Multi-Scale Streamflow Bias Correction
 in GloFAS-ERA5 across the Snow-Influenced Transboundary Basins of Central Asia**
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21063833.svg)](https://doi.org/10.5281/zenodo.21063833)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![Python 3.10+](https://img.shields.io/badge/python-3.10%2B-blue.svg)](pyproject.toml)
+
 Open-source code artifact accompanying the MDPI *Water* manuscript. `sbc` is an
 explainable, deep-ensemble framework that learns and removes the systematic
 errors of the **GloFAS-ERA5** global river-discharge reanalysis in the snow- and
