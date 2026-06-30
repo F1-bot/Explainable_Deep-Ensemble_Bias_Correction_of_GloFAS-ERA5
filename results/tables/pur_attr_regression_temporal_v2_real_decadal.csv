@@ -1,0 +1,11 @@
+model,split,target,attribute,label,source,n_gauges,attr_mean,attr_sd,spearman_r,spearman_p,pearson_r,pearson_p,coef_std,predicts,r2,adj_r2,n_model,abs_spearman,rank
+regimeprobnet,temporal,abs_pbias,elevation,mean elevation [m],h_mean,74,2670.0462,513.531,-0.1999,0.0877,-0.2907,0.012,-0.2014,success,0.1361,0.0726,74,0.1999,1
+regimeprobnet,temporal,abs_pbias,snow_frac,snow fraction / cover [-],fs_ann_chelsa,74,0.4896,0.105,-0.1926,0.1001,-0.2807,0.0154,-0.1098,success,0.1361,0.0726,74,0.1926,2
+regimeprobnet,temporal,abs_pbias,glacier_frac,glacier fraction [-],gl_fr,74,0.0216,0.0304,-0.136,0.2479,-0.1947,0.0965,0.0002,success,0.1361,0.0726,74,0.136,3
+regimeprobnet,temporal,abs_pbias,aridity,aridity index [-],ai_ann_cgiar,74,2.2579,0.5585,0.1252,0.288,0.2453,0.0352,0.177,failure,0.1361,0.0726,74,0.1252,4
+regimeprobnet,temporal,abs_pbias,area_km2,log10 drainage area [km2],area_km2,74,3.1718,0.6552,0.0945,0.4234,0.0365,0.7574,0.0587,failure,0.1361,0.0726,74,0.0945,5
+regimeprobnet,temporal,delta_kge,elevation,mean elevation [m],h_mean,74,2670.0462,513.531,-0.0942,0.4248,0.0234,0.8428,-0.0932,failure,0.0683,-0.0002,74,0.0942,1
+regimeprobnet,temporal,delta_kge,area_km2,log10 drainage area [km2],area_km2,74,3.1718,0.6552,0.0864,0.4643,0.1462,0.2138,0.055,success,0.0683,-0.0002,74,0.0864,2
+regimeprobnet,temporal,delta_kge,aridity,aridity index [-],ai_ann_cgiar,74,2.2579,0.5585,0.0658,0.5774,0.1659,0.1577,0.1393,success,0.0683,-0.0002,74,0.0658,3
+regimeprobnet,temporal,delta_kge,snow_frac,snow fraction / cover [-],fs_ann_chelsa,74,0.4896,0.105,0.0079,0.947,-0.0103,0.9306,-0.0664,success,0.0683,-0.0002,74,0.0079,4
+regimeprobnet,temporal,delta_kge,glacier_frac,glacier fraction [-],gl_fr,74,0.0216,0.0304,-0.0058,0.9612,0.1529,0.1935,0.2441,failure,0.0683,-0.0002,74,0.0058,5

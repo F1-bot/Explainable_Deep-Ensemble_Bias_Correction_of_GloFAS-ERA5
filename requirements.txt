@@ -1,0 +1,61 @@
+# =============================================================================
+#  sbc — Snow-influenced streamflow Bias Correction : runtime requirements
+# -----------------------------------------------------------------------------
+#  Open-source artifact for the MDPI paper
+#    "Explainable Deep Ensemble Learning for Multi-Scale Streamflow Bias
+#     Correction in GloFAS-ERA5 across Snow-Influenced Transboundary Basins
+#     of Central Asia"
+#
+#  Python >= 3.10.  Minimum-version (">=") pins only, so the stack resolves
+#  cleanly on a fresh venv *and* on Google Colab without forcing a downgrade of
+#  pre-installed wheels.  GPU is optional: the CPU build of PyTorch is sufficient
+#  for the boosting trio and a small EA-LSTM; CUDA is used automatically when
+#  torch.cuda.is_available().
+#
+#  Install:   pip install -r requirements.txt
+#  (For the editable package + console entry points, see pyproject.toml:
+#   pip install -e .)
+# =============================================================================
+
+# -- core scientific stack ----------------------------------------------------
+numpy>=1.24
+pandas>=2.0
+scipy>=1.10
+scikit-learn>=1.3
+
+# -- gridded climate / reanalysis I/O (GloFAS, ERA5-Land NetCDF/GRIB) ---------
+xarray>=2023.6
+netcdf4>=1.6
+h5netcdf>=1.1
+cftime>=1.6
+rioxarray>=0.15
+dask>=2023.5
+
+# -- gradient-boosting trio ---------------------------------------------------
+xgboost>=2.0
+lightgbm>=4.0
+catboost>=1.2
+
+# -- deep learning (EA-LSTM + regime-aware probabilistic flagship) ------------
+# CPU wheels work everywhere; CUDA build is picked up automatically if present.
+torch>=2.1
+
+# -- hyper-parameter search & explainability ----------------------------------
+optuna>=3.4
+shap>=0.44
+
+# -- probabilistic scoring (CRPS) ---------------------------------------------
+properscoring>=0.1
+
+# -- geospatial (gauge/basin geometry, HydroATLAS attributes) -----------------
+geopandas>=0.14
+pyogrio>=0.7
+
+# -- Copernicus data access (CDS / EWDS) --------------------------------------
+cdsapi>=0.7.2
+
+# -- configuration, columnar storage, plotting, progress ----------------------
+pyyaml>=6.0
+pyarrow>=14.0
+matplotlib>=3.7
+tqdm>=4.65

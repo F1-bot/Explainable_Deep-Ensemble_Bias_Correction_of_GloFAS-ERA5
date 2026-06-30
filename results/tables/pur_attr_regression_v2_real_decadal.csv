@@ -1,0 +1,11 @@
+model,split,target,attribute,label,source,n_gauges,attr_mean,attr_sd,spearman_r,spearman_p,pearson_r,pearson_p,coef_std,predicts,r2,adj_r2,n_model,abs_spearman,rank
+regimeprobnet,pur,abs_pbias,snow_frac,snow fraction / cover [-],fs_ann_chelsa,14,0.5551,0.119,-0.2615,0.3664,-0.0994,0.7353,-0.3372,success,0.0903,-0.4782,14,0.2615,1
+regimeprobnet,pur,abs_pbias,area_km2,log10 drainage area [km2],area_km2,14,3.7615,0.778,-0.0945,0.7479,-0.0842,0.7748,-0.0657,success,0.0903,-0.4782,14,0.0945,2
+regimeprobnet,pur,abs_pbias,elevation,mean elevation [m],h_mean,14,2858.2163,620.8742,-0.0769,0.7938,-0.0334,0.9098,0.2731,success,0.0903,-0.4782,14,0.0769,3
+regimeprobnet,pur,abs_pbias,glacier_frac,glacier fraction [-],gl_fr,14,0.0414,0.0391,0.0286,0.9227,0.0721,0.8066,0.1075,failure,0.0903,-0.4782,14,0.0286,4
+regimeprobnet,pur,abs_pbias,aridity,aridity index [-],ai_ann_cgiar,14,2.7051,0.6262,0.0286,0.9228,-0.2056,0.4808,-0.1746,failure,0.0903,-0.4782,14,0.0286,5
+regimeprobnet,pur,delta_kge,glacier_frac,glacier fraction [-],gl_fr,14,0.0414,0.0391,-0.6271,0.0164,-0.6121,0.02,-0.4881,failure,0.6353,0.4074,14,0.6271,1
+regimeprobnet,pur,delta_kge,area_km2,log10 drainage area [km2],area_km2,14,3.7615,0.778,-0.6264,0.0165,-0.5359,0.0482,-0.5984,failure,0.6353,0.4074,14,0.6264,2
+regimeprobnet,pur,delta_kge,elevation,mean elevation [m],h_mean,14,2858.2163,620.8742,-0.3714,0.191,-0.2101,0.471,0.1762,failure,0.6353,0.4074,14,0.3714,3
+regimeprobnet,pur,delta_kge,snow_frac,snow fraction / cover [-],fs_ann_chelsa,14,0.5551,0.119,-0.3451,0.2269,-0.1692,0.5631,0.3756,failure,0.6353,0.4074,14,0.3451,4
+regimeprobnet,pur,delta_kge,aridity,aridity index [-],ai_ann_cgiar,14,2.7051,0.6262,0.2967,0.303,0.2527,0.3835,0.2287,success,0.6353,0.4074,14,0.2967,5

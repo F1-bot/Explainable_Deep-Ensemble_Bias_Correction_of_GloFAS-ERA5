@@ -1,0 +1,60 @@
+# -----------------------------------------------------------------------------
+# Citation metadata for the `sbc` software artifact (Citation File Format 1.2.0).
+# Placeholder author/identifier fields follow the repository convention and MUST
+# be completed with the final author list, ORCID iDs, DOIs and dates on
+# publication. https://citation-file-format.github.io/
+# -----------------------------------------------------------------------------
+cff-version: 1.2.0
+message: >-
+  If you use this software, please cite both the software artifact and the
+  accompanying journal article (see `preferred-citation`).
+title: "sbc — Snow-influenced streamflow Bias Correction"
+abstract: >-
+  An explainable deep-ensemble framework for multi-scale (decadal and daily)
+  bias correction of the GloFAS-ERA5 global river-discharge reanalysis across
+  the snow- and glacier-influenced transboundary headwater basins of Central
+  Asia. Bias correction is cast as log-residual learning; a gradient-boosting
+  trio, an entity-aware LSTM and a regime-aware probabilistic flagship are
+  combined through stacking, evaluated with a leakage-safe temporal /
+  leave-one-basin-out / prediction-in-ungauged-regions matrix, and explained
+  with SHAP attributions tied to snow, glacier, temperature and precipitation
+  drivers. Supported by grant BR24993128.
+type: software
+version: 0.1.0
+license: MIT
+repository-code: "https://github.com/<your-org>/sbc"
+url: "https://github.com/<your-org>/sbc"
+keywords:
+  - hydrology
+  - bias correction
+  - streamflow
+  - GloFAS
+  - ERA5-Land
+  - snowmelt
+  - Central Asia
+  - deep ensemble
+  - explainable AI
+  - machine learning
+authors:
+  - name: "sbc authors"
+    # Replace with the final author list on publication, e.g.:
+    # - family-names: "Family"
+    #   given-names: "Given"
+    #   orcid: "https://orcid.org/0000-0000-0000-0000"
+
+# The article to cite in preference to (or alongside) the software itself.
+# Finalise the author list, volume/article number, DOI and date on publication.
+preferred-citation:
+  type: article
+  title: >-
+    Explainable Deep-Ensemble Learning for Multi-Scale Streamflow Bias
+    Correction in GloFAS-ERA5 across the Snow-Influenced Transboundary Basins
+    of Central Asia
+  authors:
+    - name: "sbc authors"
+  journal: "Water (MDPI)"
+  year: 2026
+  # volume:
+  # issue:
+  # start:        # article number
+  # doi:          # 10.3390/wXXXXXXXX

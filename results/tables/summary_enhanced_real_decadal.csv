@@ -1,0 +1,5 @@
+model,split,n_gauges,kge_raw,kge,d_kge,nse,pbias_raw,pbias,peak_timing_err,crps
+deepens,pur,14,0.395,0.23,-0.209,-0.655,-10.199,37.003,19.561,70.703
+deepens,temporal,74,0.386,0.813,0.42,0.751,-12.758,-8.065,14.542,2.876
+stacked,pur,14,0.395,0.08,-0.155,-1.94,-10.199,17.787,18.489,
+stacked,temporal,74,0.386,0.625,0.128,0.439,-12.758,10.773,19.167,

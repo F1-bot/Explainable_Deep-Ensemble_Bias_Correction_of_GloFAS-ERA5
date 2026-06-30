@@ -1,0 +1,11 @@
+study,contribution,split,model,full,ablated,n_gauges,kge_raw,kge_full,kge_ablated,delta_kge,nse_full,nse_ablated,delta_nse,pbias_full,pbias_ablated,crps_full,crps_ablated,delta_crps
+snow_features,snow forcings & derived features,temporal,lgbm,snow_on,snow_off,74,0.3859,0.8069,0.8014,0.0055,0.7717,0.7729,-0.0012,-8.0868,-10.7231,,,
+snow_features,snow forcings & derived features,pur,lgbm,snow_on,snow_off,14,0.3946,0.4643,0.2927,0.1716,0.181,-0.116,0.297,-9.3535,-13.1142,,,
+static_attrs,static catchment attributes,temporal,lgbm,static_on,static_off,74,0.3859,0.8069,0.6376,0.1693,0.7717,0.5582,0.2135,-8.0868,-10.9309,,,
+static_attrs,static catchment attributes,pur,lgbm,static_on,static_off,14,0.3946,0.4643,0.4792,-0.0149,0.181,-0.1044,0.2854,-9.3535,20.776,,,
+residual_target,log-residual vs direct discharge,temporal,lgbm,residual,direct,74,0.3859,0.8069,0.7966,0.0103,0.7717,0.7369,0.0348,-8.0868,-11.4098,,,
+residual_target,log-residual vs direct discharge,pur,lgbm,residual,direct,14,0.3946,0.4643,0.0558,0.4085,0.181,0.127,0.054,-9.3535,-18.6633,,,
+regime_gating,regime-gated mixture-of-experts,temporal,regimeprobnet,gating_on,gating_off,74,0.3859,0.8033,0.823,-0.0197,0.7452,0.7558,-0.0107,-10.0886,-7.382,2.8844,2.8176,-0.0668
+regime_gating,regime-gated mixture-of-experts,pur,regimeprobnet,gating_on,gating_off,14,0.3946,0.2642,0.0591,0.2051,-0.8372,-1.7517,0.9146,21.4521,21.8615,64.8008,37.3808,-27.42
+physics_penalty,SWE/temperature monotonicity,temporal,regimeprobnet,physics_on,physics_off,74,0.3859,0.8033,0.8113,-0.008,0.7452,0.7675,-0.0223,-10.0886,-8.5408,2.8844,2.7351,-0.1493
+physics_penalty,SWE/temperature monotonicity,pur,regimeprobnet,physics_on,physics_off,14,0.3946,0.2642,0.2837,-0.0195,-0.8372,-1.4696,0.6325,21.4521,39.254,64.8008,69.812,5.0112

@@ -1,0 +1,7 @@
+model,split,n_gauges,kge_raw,kge,d_kge,nse,pbias_raw,pbias,peak_timing_err,crps
+probnet_alaplace,pur,14,0.395,0.061,-0.025,-0.494,-10.199,3.937,20.246,66.129
+probnet_alaplace,temporal,74,0.386,0.806,0.436,0.755,-12.758,-4.236,14.183,2.737
+probnet_hardmono,pur,14,0.395,0.257,-0.127,-1.178,-10.199,38.509,20.367,61.276
+probnet_hardmono,temporal,74,0.386,0.798,0.427,0.732,-12.758,-8.617,16.342,2.792
+probnet_soft,pur,14,0.395,0.264,-0.084,-0.837,-10.199,21.452,16.28,64.801
+probnet_soft,temporal,74,0.386,0.803,0.431,0.745,-12.758,-10.089,14.55,2.884

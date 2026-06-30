@@ -1,0 +1,71 @@
+# =============================================================================
+#  Default experiment configuration for the sbc bias-correction framework.
+#  Consumed by sbc.experiment; every run is fully reproducible from this file.
+# =============================================================================
+seed: 1234
+
+data:
+  # which assembled modelling tables to run; "synthetic" uses sbc.synthetic
+  source: synthetic            # synthetic | real
+  scales: [decadal, daily]     # decadal = primary, daily = Naryn case study
+  synthetic:
+    n_basins: 7
+    gauges_per_basin: [3, 10]
+    years: 25
+    seed: 1234
+
+features:
+  windows:
+    decadal: [3, 6, 9]         # decade lags / rolling windows
+    daily: [7, 30, 90]
+  rain_on_snow: {precip_mm: 5.0, swe_mm: 10.0}
+  add_seasonality: true
+  collapse_monthly_climatology: true   # scf_*/pr_*/tas_* -> seasonal descriptors
+
+regimes:
+  enabled: true
+
+models:
+  baselines: [scaling, qmap]
+  boosting:
+    backends: [xgb, lgbm, catboost]
+    # Per-fold HPO across the whole matrix is prohibitive; the matrix uses strong
+    # defaults and Optuna tuning is reported once on the temporal split
+    # (scripts/tune_boosting.py). Set >0 to enable per-fold tuning.
+    n_optuna_trials: 0
+  deep:
+    ealstm:
+      seq_len: {decadal: 12, daily: 90}
+      hidden: 64
+      epochs: 40
+      patience: 8
+    regimeprobnet:             # FLAGSHIP
+      seq_len: {decadal: 12, daily: 90}
+      hidden: 64
+      n_experts: 5
+      lambda_gate: 0.3         # weight of regime supervision on the MoE gate
+      lambda_phys: 0.1         # weight of SWE/T monotonicity penalty
+      crps_loss: true
+      epochs: 50
+      patience: 10
+  ensemble:
+    members: [lgbm, catboost, ealstm, regimeprobnet]
+    meta: nnls                 # nnls | ridge | catboost
+
+validation:
+  temporal_test_frac: 0.30
+  spatial: leave_one_basin_out
+  pur: {train_domain: core, test_domain: transfer}
+  oof_folds: 5
+
+explain:
+  enabled: true
+  max_samples: 3000
+  snow_features: [swe, smlt, t2m_mean, f_swe_lag1, f_smlt_roll, f_cdd]
+  regime_conditional: true
+
+output:
+  figures: results/figures
+  tables: results/tables
+  models: results/models
+  shap: results/shap

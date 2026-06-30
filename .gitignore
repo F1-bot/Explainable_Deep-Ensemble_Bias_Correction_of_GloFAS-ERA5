@@ -1,0 +1,85 @@
+# ============================================================
+#  Explainable deep-ensemble GloFAS-ERA5 bias correction
+#  Public reproducibility repository — .gitignore
+#  KEEP: source code, scripts, notebook, result tables, figures.
+#  DROP: secrets, raw data, copyrighted PDFs, drafts, scratch.
+# ============================================================
+
+# --- SECRETS — NEVER COMMIT ---------------------------------
+configs/secrets.env
+*.env
+!configs/secrets.env.example
+
+# --- environments & caches ---------------------------------
+.venv/
+venv/
+.pipcache/
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+*.egg-info/
+build/
+dist/
+
+# --- OS / editor junk --------------------------------------
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.log
+~$*
+
+# --- large raw data (re-download via scripts/; see REPRODUCIBILITY.md) ---
+datasets/
+*.grib
+*.grib2
+*.nc
+*.zip
+*.gpkg
+
+# --- heavy model artifacts ---------------------------------
+results/models/
+*.pt
+*.pkl
+*.cbm
+
+# --- internal backups / scratch ----------------------------
+scratchpad/
+*.preadv.*
+
+# --- results: publish the 14 final figures + REAL result tables only ---
+# figures: drop intermediate diagnostics, backups, GA experiments, contact sheets
+results/figures/*.png
+results/figures/publication/graphical_abstract*.png
+results/figures/publication/_*.png
+results/shap/*.png
+# tables: drop dry-run / synthetic / self-test / preliminary artifacts
+results/tables/*dryrun*
+results/tables/*synthetic*
+results/tables/*selftest*
+results/tables/*_prelim.*
+results/tables/*_quick.*
+
+# --- copyrighted reference PDFs / extracted full texts -----
+references/
+
+# --- manuscript drafts & internal QA (not part of reproduction) ---
+docs/
+
+# --- root-level working images & assets (figures live in results/figures/) ---
+/*.png
+water-template.dot
+skills-lock.json
+
+# --- Claude Code / agent tooling (not part of the research artifact) ---
+.claude/
+.agents/
+.cursor/
+
+# --- stray scratch metric dumps & rejected GA experiment scripts ---
+results/tables/[a-z].txt
+scripts/graphical_abstract.py
+scripts/graphical_abstract_v4.py

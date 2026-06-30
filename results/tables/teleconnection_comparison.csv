@@ -1,0 +1,5 @@
+config,model,split,n_gauges,kge_raw,kge,d_kge,nse,pbias_raw,pbias,peak_timing_err,crps
+no_tele,lgbm_no_tele,pur,14,0.395,0.451,0.012,0.229,-10.199,-10.93,19.918,
+no_tele,lgbm_no_tele,temporal,74,0.386,0.812,0.421,0.775,-12.758,-8.665,13.892,
+with_tele,lgbm_with_tele,pur,14,0.395,0.453,0.056,0.048,-10.199,-6.451,18.764,
+with_tele,lgbm_with_tele,temporal,74,0.386,0.809,0.412,0.784,-12.758,-9.618,15.051,

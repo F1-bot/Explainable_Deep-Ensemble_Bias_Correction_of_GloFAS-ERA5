@@ -1,0 +1,5 @@
+scale,model,split,n_gauges,kge_raw,kge,d_kge,nse,pbias_raw,pbias,peak_timing_err,crps
+monthly,donor_saber,pur,14,0.404,-0.541,-0.847,-8.992,-10.55,125.436,27.046,
+monthly,donor_saber,temporal,74,0.415,0.797,0.342,0.695,-11.864,-4.444,13.235,
+monthly,lgbm,pur,14,0.404,-0.642,-0.853,-9.609,-10.55,141.032,14.868,
+monthly,lgbm,temporal,74,0.415,0.548,0.018,0.242,-11.864,5.276,22.792,

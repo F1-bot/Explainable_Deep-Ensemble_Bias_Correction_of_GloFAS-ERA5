@@ -1,0 +1,10 @@
+# Normalize line endings across OSes; mark binaries explicitly.
+* text=auto eol=lf
+
+*.png  binary
+*.jpg  binary
+*.pdf  binary
+*.parquet binary
+*.docx binary
+*.dot  binary
+*.ipynb text

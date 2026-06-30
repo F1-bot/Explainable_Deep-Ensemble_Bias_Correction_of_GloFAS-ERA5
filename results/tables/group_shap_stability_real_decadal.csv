@@ -1,0 +1,5 @@
+value
+"GroupStabilityResult(table=           group  mean_abs        sd        cv  rank
+0  glofas_memory  1.001012  0.035277  0.035241     1
+1         static  0.431491  0.009754  0.022606     2
+2           sn"

@@ -1,0 +1,99 @@
+{
+  "scale": "daily",
+  "source": "real",
+  "quick": false,
+  "summary": [
+    {
+      "model": "catboost",
+      "split": "temporal",
+      "n_gauges": 2,
+      "kge_raw": 0.033,
+      "kge": 0.776,
+      "d_kge": 0.742,
+      "nse": 0.665,
+      "pbias_raw": -82.275,
+      "pbias": -14.637,
+      "peak_timing_err": 22.571,
+      "crps": NaN
+    },
+    {
+      "model": "ealstm",
+      "split": "temporal",
+      "n_gauges": 2,
+      "kge_raw": 0.033,
+      "kge": 0.826,
+      "d_kge": 0.793,
+      "nse": 0.728,
+      "pbias_raw": -82.275,
+      "pbias": -10.18,
+      "peak_timing_err": 22.257,
+      "crps": NaN
+    },
+    {
+      "model": "lgbm",
+      "split": "temporal",
+      "n_gauges": 2,
+      "kge_raw": 0.033,
+      "kge": 0.789,
+      "d_kge": 0.756,
+      "nse": 0.681,
+      "pbias_raw": -82.275,
+      "pbias": -13.576,
+      "peak_timing_err": 23.033,
+      "crps": NaN
+    },
+    {
+      "model": "qmap",
+      "split": "temporal",
+      "n_gauges": 2,
+      "kge_raw": 0.033,
+      "kge": 0.581,
+      "d_kge": 0.548,
+      "nse": 0.283,
+      "pbias_raw": -82.275,
+      "pbias": -12.432,
+      "peak_timing_err": 23.602,
+      "crps": NaN
+    },
+    {
+      "model": "regimeprobnet",
+      "split": "temporal",
+      "n_gauges": 2,
+      "kge_raw": 0.033,
+      "kge": 0.822,
+      "d_kge": 0.789,
+      "nse": 0.688,
+      "pbias_raw": -82.275,
+      "pbias": -7.071,
+      "peak_timing_err": 21.612,
+      "crps": 16.31
+    },
+    {
+      "model": "scaling",
+      "split": "temporal",
+      "n_gauges": 2,
+      "kge_raw": 0.033,
+      "kge": 0.328,
+      "d_kge": 0.295,
+      "nse": -0.168,
+      "pbias_raw": -82.275,
+      "pbias": -9.421,
+      "peak_timing_err": 18.543,
+      "crps": NaN
+    },
+    {
+      "model": "xgb",
+      "split": "temporal",
+      "n_gauges": 2,
+      "kge_raw": 0.033,
+      "kge": 0.789,
+      "d_kge": 0.756,
+      "nse": 0.684,
+      "pbias_raw": -82.275,
+      "pbias": -13.923,
+      "peak_timing_err": 22.538,
+      "crps": NaN
+    }
+  ],
+  "shap": {}
+}

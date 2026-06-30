@@ -1,0 +1,5 @@
+model,split,n_gauges,kge_raw,kge,d_kge,nse,pbias_raw,pbias,peak_timing_err,crps
+regimeprobnet,pur,14,0.395,0.234,-0.109,-0.743,-10.199,3.77,18.226,66.447
+regimeprobnet,temporal,74,0.386,0.807,0.429,0.736,-12.758,-5.151,15.458,2.782
+transfer_lstm,pur,14,0.395,0.262,-0.136,-0.174,-10.199,-28.431,19.684,
+transfer_lstm,temporal,74,0.386,0.793,0.416,0.749,-12.758,-8.874,15.003,
