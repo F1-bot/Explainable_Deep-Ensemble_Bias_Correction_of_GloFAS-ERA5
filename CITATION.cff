@@ -22,8 +22,8 @@ abstract: >-
 type: software
 version: 0.1.0
 license: MIT
-repository-code: "https://github.com/<your-org>/sbc"
-url: "https://github.com/<your-org>/sbc"
+repository-code: "https://github.com/F1-bot/Explainable_Deep-Ensemble_Bias_Correction_of_GloFAS-ERA5"
+url: "https://github.com/F1-bot/Explainable_Deep-Ensemble_Bias_Correction_of_GloFAS-ERA5"
 keywords:
   - hydrology
   - bias correction

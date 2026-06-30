@@ -134,7 +134,7 @@ No raw data ships with this repository. The 24 MB consolidated
 ### Option A — local virtual environment
 
 ```bash
-git clone https://github.com/<your-org>/sbc.git
+git clone https://github.com/F1-bot/Explainable_Deep-Ensemble_Bias_Correction_of_GloFAS-ERA5.git
 cd sbc
 
 python -m venv .venv
